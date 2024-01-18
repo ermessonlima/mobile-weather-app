@@ -189,3 +189,10 @@ Please provide your key via email or phone.
 - [@ermessonlima](https://github.com/ermessonlima)
  
 
+# Instalação do storybook
+
+Baseada em [link](https://dev.to/dannyhw/getting-started-with-react-native-storybook-96c)
+```bash
+npx sb@latest init --type react_native
+```
+Instalar styled components com StoryBook baseado em (link)[https://storybook.js.org/recipes/styled-components]
