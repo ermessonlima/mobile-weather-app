@@ -1,17 +1,28 @@
-import { withThemeFromJSXProvider } from '@storybook/addon-themes';
-import { createGlobalStyle } from 'styled-components';
+import { ThemeProvider } from "styled-components"
+import  theme  from "../src/theme"
 
-const GlobalStyles = createGlobalStyle`
-  body {
-    font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-`;
 
 export const decorators = [
-  withThemeFromJSXProvider({
-    GlobalStyles, // Adds your GlobalStyle component to all stories
-  }),
+  
+  Story => {
+    return (
+      <ThemeProvider theme={theme}>
+        <Story />
+      </ThemeProvider>
+    );
+  },
 ];
+// export const decorators = [
+//   withThemeFromJSXProvider({
+//     themes: {
+//       light: theme,
+//       dark: theme,
+//     },
+//     defaultTheme: "light",
+//     Provider: ThemeProvider,
+//   }),
+// ]
+
 export const parameters = {
   controls: {
     matchers: {
