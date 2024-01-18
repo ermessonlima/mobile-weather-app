@@ -5,6 +5,7 @@ module.exports = {
     '@storybook/addon-ondevice-actions',
     '@storybook/addon-themes',
     '@storybook/addon-themes',
+    '@storybook/addon-themes',
     '@storybook/addon-themes'
   ],
 };
