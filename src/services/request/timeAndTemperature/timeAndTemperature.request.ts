@@ -15,8 +15,10 @@ export const getTimeAndTemperatureRequest = async ({
     const data = await instance.get(
       `date=${formattedDate}&city_name=${city}&lat=${coords?.lat || ''}&lon=${coords?.lon || ''}&locale=pt`
     )
+    console.log(city)
     return data.data.results
   } catch (error) {
+    console.log(error)
     throw new Error('Erro desconhecido')
   }
 }
