@@ -48,6 +48,8 @@ try {
 const getStories = () => {
   return {
     "./.storybook/stories/Button/Button.stories.js": require("./stories/Button/Button.stories.js"),
+    "./.storybook/stories/PickerLocation/PickerLocation.stories.js": require("./stories/PickerLocation/PickerLocation.stories.js"),
+    "./.storybook/stories/Weather/Weather.stories.js": require("./stories/Weather/Weather.stories.js"),
   };
 };
 

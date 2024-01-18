@@ -1,9 +1,9 @@
 // import App from './src'
 import StorybookUI from './.storybook'
 
-if (__DEV__) {
-  import('./ReactotronConfig')
-}
+// if (__DEV__) {
+//   import('./ReactotronConfig')
+// }
 
 // export default App
 
