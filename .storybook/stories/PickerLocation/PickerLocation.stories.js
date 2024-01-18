@@ -9,11 +9,11 @@ const MyPickerLocation ={
  component:PickerLocation,
  decorators: [
     (Story) => (
-    //   <View style={{ alignItems: 'center', justifyContent: 'center', flex: 1 }}>
+      <View style={{ backgroundColor:'red'}}>
          <ThemeProvider theme={theme}>
         <Story />
         </ThemeProvider>
-    //   </View>
+     </View>
     ),
   ],
 }

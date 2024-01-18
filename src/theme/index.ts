@@ -10,12 +10,19 @@ export default {
     NIGHT_RAIN: ['#00033F', '#000443', '#000'],
     NIGHT_CLEAN: ['#44444F', '#888', '#444']
   },
+  // FONT_FAMILY: {
+  //   REGULAR_SF: 'SF-Pro-Display-Regular',
+  //   MEDIUM_ALEGREYASANS: 'AlegreyaSans-Medium',
+  //   SEMIBOLD_SF: 'SF-Pro-Display-Semibold',
+  //   BOLD_ALEGREYASANS: 'AlegreyaSans-Bold',
+  //   BOLD_SF: 'SF-Pro-Display-Bold'
+  // },
   FONT_FAMILY: {
-    REGULAR_SF: 'SF-Pro-Display-Regular',
-    MEDIUM_ALEGREYASANS: 'AlegreyaSans-Medium',
-    SEMIBOLD_SF: 'SF-Pro-Display-Semibold',
-    BOLD_ALEGREYASANS: 'AlegreyaSans-Bold',
-    BOLD_SF: 'SF-Pro-Display-Bold'
+    REGULAR_SF: 'Arial',
+    MEDIUM_ALEGREYASANS: 'Arial',
+    SEMIBOLD_SF: 'Arial',
+    BOLD_ALEGREYASANS: 'Arial',
+    BOLD_SF: 'Arial'
   },
   FONT_WEIGHT: {
     REGULAR_SF: '400',

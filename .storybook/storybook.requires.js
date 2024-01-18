@@ -48,6 +48,9 @@ try {
 const getStories = () => {
   return {
     "./.storybook/stories/Button/Button.stories.js": require("./stories/Button/Button.stories.js"),
+    "./.storybook/stories/DailyTemperature/DailyTemperature.stories.js": require("./stories/DailyTemperature/DailyTemperature.stories.js"),
+    "./.storybook/stories/Header/Header.stories.js": require("./stories/Header/Header.stories.js"),
+    "./.storybook/stories/Loading/Loading.stories.js": require("./stories/Loading/Loading.stories.js"),
     "./.storybook/stories/PickerLocation/PickerLocation.stories.js": require("./stories/PickerLocation/PickerLocation.stories.js"),
     "./.storybook/stories/Weather/Weather.stories.js": require("./stories/Weather/Weather.stories.js"),
   };

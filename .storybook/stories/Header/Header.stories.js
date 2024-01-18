@@ -1,10 +1,10 @@
 import React from 'react';
 import { View } from 'react-native';
-import Weather from '@components/Weather/Weather'
+import Header from '@components/Header/Header'
 
 export default  {
-  title: 'Weather',
-  component: Weather,
+  title: 'Header',
+  component: Header,
   decorators: [
     (Story) => (
       <View style={{ backgroundColor:'red'}}>
@@ -14,6 +14,9 @@ export default  {
   ],
 };
 
-const Template = args => <Weather {...args} />
+const Template = args => <Header {...args} />
 
 export const Basic = Template.bind({})
+
+
+
