@@ -195,4 +195,24 @@ Baseada em [link](https://dev.to/dannyhw/getting-started-with-react-native-story
 ```bash
 npx sb@latest init --type react_native
 ```
-Instalar styled components com StoryBook baseado em (link)[https://storybook.js.org/recipes/styled-components]
+Edite o arquivo App.tsx
+```js
+// import App from './src'
+import StorybookUI from './.storybook'
+
+if (__DEV__) {
+  import('./ReactotronConfig')
+}
+
+// export default App
+
+export default StorybookUI
+```
+
+Editar a linha do package.json:
+
+```"storybook": "sb-rn-get-stories && STORYBOOK_ENABLED='true' expo start"```
+
+Para rodar o storybook:
+
+```yarn storybook```
