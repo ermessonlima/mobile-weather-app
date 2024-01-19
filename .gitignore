@@ -123,4 +123,4 @@ dist/
 
 # @end expo-cli 
 storybook.log
-.storybook/storybook.requires.js
+storybook.requires.js
