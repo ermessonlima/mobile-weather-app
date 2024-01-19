@@ -1,6 +1,8 @@
 import React from 'react';
 import { View } from 'react-native';
 import { MyButton } from './Button';
+import { userEvent, within } from '@storybook/testing-library';
+
 
 const MyButtonMeta = {
   title: 'MyButton',
@@ -25,7 +27,11 @@ export default MyButtonMeta;
 export const Basic = {};
 
 export const AnotherExample = {
-  args: {
-    text: 'Another example',
-  },
+ 
+  play:async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const header=  await canvas.getByText('Hello world')
+    console.log(header)
+    await userEvent.press(header)
+  }
 };

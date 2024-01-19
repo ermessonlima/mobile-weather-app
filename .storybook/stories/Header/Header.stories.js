@@ -1,6 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import Header from '@components/Header/Header'
+import { userEvent, within } from '@storybook/testing-library';
 import { useHomeController } from '../../../src/screen/HomeScreen/HomeScreen.controller'
 
 export default  {
@@ -16,6 +17,15 @@ export default  {
     ),
   ],
 };
+
+export const PressHeader={
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const header= await canvas.getByTestId('header')
+    console.log(header)
+    await userEvent.press(header)
+  }
+}
 
 export const Basic = {
   
