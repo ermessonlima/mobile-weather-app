@@ -1,8 +1,11 @@
 import React from 'react';
 import { View } from 'react-native';
 import Header from '@components/Header/Header'
+import { useHomeController } from '../../../src/screen/HomeScreen/HomeScreen.controller'
 
 export default  {
+
+  
   title: 'Header',
   component: Header,
   decorators: [
@@ -14,9 +17,14 @@ export default  {
   ],
 };
 
-const Template = args => <Header {...args} />
+export const Basic = {
+  
+  render: function Render(args) {
+    const {onOpen}=useHomeController()
 
-export const Basic = Template.bind({})
+    return <Header {...args} onOpen={onOpen}  />;
+  },
+};
 
 
 
